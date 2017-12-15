@@ -1,0 +1,14 @@
+﻿@{
+    var db = Database.Open("MegaDeskQuotes");
+    var selectedData = db.Query("SELECT * FROM DeskQuotes");
+    var grid = new WebGrid(source: selectedData);
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+
+</body>
+</html>
